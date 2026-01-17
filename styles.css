@@ -1560,6 +1560,10 @@ blockquote p {
         display: flex;
     }
     
+    .scroll-indicator {
+        display: none;
+    }
+    
     .hero-stats {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
