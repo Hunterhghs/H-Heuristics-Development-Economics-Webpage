@@ -1204,8 +1204,19 @@ blockquote p {
 }
 
 .policy-icon {
-    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
     flex-shrink: 0;
+    color: var(--color-accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.policy-icon svg {
+    width: 100%;
+    height: 100%;
 }
 
 .policy-item h4 {
