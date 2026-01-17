@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Economics | H Heuristics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">H<span>Heuristics</span></a>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#convergence">Convergence</a></li>
+                <li><a href="#diffusion">Diffusion</a></li>
+                <li><a href="#leapfrogging">Leapfrogging</a></li>
+                <li><a href="#poverty">Poverty Reduction</a></li>
+                <li><a href="#urban-engines">Urban Engines</a></li>
+                <li><a href="https://hheuristics.substack.com" target="_blank" class="nav-cta">Substack →</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">H Heuristics Research</p>
+            <h1>Development Economics</h1>
+            <p class="hero-subtitle">Understanding how nations grow, converge, and lift populations out of poverty through structural transformation, technological diffusion, and institutional development.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">53%</span>
+                    <span class="stat-label">of humanity lives on less than $6.85/day</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">9%</span>
+                    <span class="stat-label">remain in extreme poverty (&lt;$2.15/day)</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10%</span>
+                    <span class="stat-label">live at developed-world standards</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section overview-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>What is Development Economics?</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-main">
+                    <p class="lead">Development economics is the study of how economies transform from low-income, agrarian states to high-productivity, diversified systems capable of sustaining rising living standards for their populations.</p>
+                    
+                    <p>Unlike traditional economics, which often assumes well-functioning markets and institutions, development economics grapples with the fundamental constraints that trap billions in poverty: weak institutions, limited infrastructure, fragmented markets, and barriers to the diffusion of knowledge and technology.</p>
+
+                    <p>The field has evolved significantly since its emergence in the mid-20th century. Early development economists focused on capital accumulation and industrialization. Today, the discipline encompasses a richer understanding of how human capital, institutions, geography, and technology interact to shape development trajectories.</p>
+
+                    <blockquote>
+                        <p>"The central question is not merely how to generate growth, but how to ensure that growth diffuses—spreading productivity gains, opportunities, and rising living standards to the majority of the population."</p>
+                    </blockquote>
+                </div>
+                <aside class="content-sidebar">
+                    <div class="info-card">
+                        <h4>Core Questions</h4>
+                        <ul>
+                            <li>Why do some countries grow rapidly while others stagnate?</li>
+                            <li>How do economies transition from agriculture to manufacturing to services?</li>
+                            <li>What role do institutions play in enabling or constraining development?</li>
+                            <li>How does technology diffuse across and within economies?</li>
+                            <li>What policies accelerate poverty reduction at scale?</li>
+                        </ul>
+                    </div>
+                    <div class="info-card accent">
+                        <h4>Key Thinkers</h4>
+                        <ul class="thinker-list">
+                            <li><strong>W. Arthur Lewis</strong> — Dual sector model</li>
+                            <li><strong>Robert Solow</strong> — Growth theory</li>
+                            <li><strong>Daron Acemoglu</strong> — Institutions</li>
+                            <li><strong>Paul Krugman</strong> — Economic geography</li>
+                            <li><strong>Abhijit Banerjee</strong> — Poverty interventions</li>
+                            <li><strong>Dani Rodrik</strong> — Industrial policy</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Living Standards -->
+    <section class="section dark-section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">02</span>
+                <h2>The Global Living Standards Crisis</h2>
+            </div>
+            <p class="section-intro">The extreme poverty line ($2.15/day) captures only the sharpest edge of a much broader global standard-of-living crisis. The majority of humanity remains clustered in low-income and economically vulnerable conditions.</p>
+            
+            <div class="income-distribution">
+                <div class="income-bar">
+                    <div class="income-segment extreme" style="flex: 9;">
+                        <div class="segment-content">
+                            <h4>Extreme Poverty</h4>
+                            <p class="segment-range">&lt;$2.15/day</p>
+                            <p class="segment-percent">9%</p>
+                        </div>
+                    </div>
+                    <div class="income-segment moderate" style="flex: 21;">
+                        <div class="segment-content">
+                            <h4>Moderate Poverty</h4>
+                            <p class="segment-range">$2.15–$3.65/day</p>
+                            <p class="segment-percent">21%</p>
+                        </div>
+                    </div>
+                    <div class="income-segment vulnerable" style="flex: 23;">
+                        <div class="segment-content">
+                            <h4>Vulnerable Low-Income</h4>
+                            <p class="segment-range">$3.65–$6.85/day</p>
+                            <p class="segment-percent">23%</p>
+                        </div>
+                    </div>
+                    <div class="income-segment above" style="flex: 37;">
+                        <div class="segment-content">
+                            <h4>Above Poverty Line</h4>
+                            <p class="segment-range">$6.85–$55/day</p>
+                            <p class="segment-percent">37%</p>
+                        </div>
+                    </div>
+                    <div class="income-segment developed" style="flex: 10;">
+                        <div class="segment-content">
+                            <h4>Developed Standard</h4>
+                            <p class="segment-range">&gt;$55/day</p>
+                            <p class="segment-percent">10%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="income-scale">
+                    <span>$0</span>
+                    <span>$2.15</span>
+                    <span>$3.65</span>
+                    <span>$6.85</span>
+                    <span>$55</span>
+                    <span>&gt;$55</span>
+                </div>
+                <p class="income-note">Nearly half of humanity (53%) lives on less than $6.85 per day—the threshold for basic economic security.</p>
+            </div>
+
+            <div class="implications-grid">
+                <div class="implication-card">
+                    <div class="implication-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h4>Structural Vulnerability</h4>
+                    <p>Those in the $3.65–$6.85 range remain one shock away from falling back into poverty. Economic security requires sustained income growth, not just crossing arbitrary thresholds.</p>
+                </div>
+                <div class="implication-card">
+                    <div class="implication-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h4>Generational Timeframes</h4>
+                    <p>At historical growth rates, moving the global median from $6/day to $50/day would take 50+ years. Accelerating diffusion is not optional—it's imperative.</p>
+                </div>
+                <div class="implication-card">
+                    <div class="implication-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h4>Distribution Matters</h4>
+                    <p>Global GDP has grown substantially, yet gains concentrate in limited geographies. The challenge is not production but distribution and diffusion of productivity gains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Convergence Section -->
+    <section id="convergence" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Economic Convergence</h2>
+            </div>
+            <div class="content-grid reverse">
+                <div class="content-main">
+                    <p class="lead">Convergence theory predicts that poorer economies should grow faster than richer ones, eventually "catching up" to developed-world living standards. The empirical record is more complex.</p>
+
+                    <h3>Unconditional vs. Conditional Convergence</h3>
+                    <p><strong>Unconditional convergence</strong> would imply that all poor countries naturally catch up to rich ones over time. This prediction largely fails empirically—many low-income countries have stagnated or diverged further from rich nations.</p>
+                    
+                    <p><strong>Conditional convergence</strong> holds that countries converge to their own steady states, determined by their savings rates, population growth, human capital, institutions, and policies. Countries with similar fundamentals tend to converge; those with weak fundamentals may remain trapped at low equilibria.</p>
+
+                    <h3>The Convergence Channels</h3>
+                    <div class="channel-list">
+                        <div class="channel">
+                            <h4>Technology Diffusion & Digital Adoption</h4>
+                            <p>Poorer economies can adopt technologies developed elsewhere, bypassing R&D costs. Digital technologies accelerate this through rapid, low-cost deployment.</p>
+                        </div>
+                        <div class="channel">
+                            <h4>Human Capital Accumulation</h4>
+                            <p>Investments in education and health create a productive workforce capable of absorbing and deploying advanced techniques and technologies.</p>
+                        </div>
+                        <div class="channel">
+                            <h4>Structural Transformation</h4>
+                            <p>Shifting labor from low-productivity agriculture to higher-productivity manufacturing and services raises aggregate output per worker.</p>
+                        </div>
+                        <div class="channel">
+                            <h4>Global Value Chain Integration</h4>
+                            <p>Participation in international production networks transfers knowledge, capital, and market access to emerging economies.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="content-sidebar">
+                    <div class="convergence-diagram">
+                        <h4>Convergence Dynamics</h4>
+                        <div class="trajectory-visual">
+                            <div class="trajectory advanced">
+                                <span class="trajectory-label">Advanced Economies</span>
+                            </div>
+                            <div class="trajectory emerging">
+                                <span class="trajectory-label">Emerging Markets (Converging)</span>
+                            </div>
+                            <div class="trajectory stagnant">
+                                <span class="trajectory-label">Trapped Economies</span>
+                            </div>
+                        </div>
+                        <p class="diagram-caption">Convergence is possible but conditional on policy choices, institutional quality, and integration into the global economy.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Constraints on Convergence</h4>
+                        <ul>
+                            <li>Institutional fragility & weak governance</li>
+                            <li>Infrastructure deficits</li>
+                            <li>Commodity dependence & volatility</li>
+                            <li>Informality & income inequality</li>
+                            <li>Macroeconomic instability</li>
+                            <li>Market fragmentation & conflict</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diffusion Section -->
+    <section id="diffusion" class="section alt-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Development Diffusion</h2>
+            </div>
+            <p class="section-intro">Poverty reduction at scale requires not just generating growth in key nodes, but overcoming barriers to its diffusion. Investments in rural infrastructure, inclusive institutions, and connecting secondary cities are critical to ensuring productivity gains reach the poorest populations.</p>
+
+            <div class="diffusion-framework">
+                <div class="diffusion-concept">
+                    <div class="concept-header">
+                        <div class="concept-icon growth-node"></div>
+                        <h3>Growth Nodes</h3>
+                    </div>
+                    <p>Major metropolitan regions, industrial corridors, export hubs, and tech clusters where productivity concentrates. These serve as the engines from which development spreads.</p>
+                    <ul class="concept-examples">
+                        <li>Delhi-NCR, Mumbai-Pune Corridor</li>
+                        <li>São Paulo, Mexico City</li>
+                        <li>Lagos, Johannesburg, Nairobi</li>
+                        <li>Jakarta, Ho Chi Minh City</li>
+                    </ul>
+                </div>
+
+                <div class="diffusion-arrow">
+                    <svg viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12h50M50 12l-8-8M50 12l-8 8" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>Diffusion Flows</span>
+                </div>
+
+                <div class="diffusion-concept">
+                    <div class="concept-header">
+                        <div class="concept-icon diffusion-zone"></div>
+                        <h3>Partial Diffusion Zones</h3>
+                    </div>
+                    <p>Intermediate areas and secondary cities that receive some spillovers from growth nodes but lack full integration. Infrastructure and institutional improvements can strengthen these linkages.</p>
+                </div>
+
+                <div class="diffusion-arrow weak">
+                    <svg viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12h50M50 12l-8-8M50 12l-8 8" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                    </svg>
+                    <span>Weak Diffusion</span>
+                </div>
+
+                <div class="diffusion-concept">
+                    <div class="concept-header">
+                        <div class="concept-icon poverty-zone"></div>
+                        <h3>Poverty Persistence Zones</h3>
+                    </div>
+                    <p>Rural areas, informal economies, and regions with weak institutions where development gains fail to penetrate. These represent the frontier of the poverty reduction challenge.</p>
+                </div>
+            </div>
+
+            <div class="diffusion-mechanisms">
+                <h3>Mechanisms of Diffusion</h3>
+                <div class="mechanism-grid">
+                    <div class="mechanism-card">
+                        <h4>Trade & Logistics Corridors</h4>
+                        <p>Physical infrastructure connecting production centers to markets, enabling goods, inputs, and agricultural products to flow efficiently.</p>
+                    </div>
+                    <div class="mechanism-card">
+                        <h4>Supply Chain Linkages</h4>
+                        <p>Integration of peripheral producers into value chains anchored by core city industries, transmitting demand, standards, and technical requirements outward.</p>
+                    </div>
+                    <div class="mechanism-card">
+                        <h4>Labor Mobility</h4>
+                        <p>Migration and commuting patterns that allow workers to access higher-productivity employment, with remittances and skills flowing back to origin communities.</p>
+                    </div>
+                    <div class="mechanism-card">
+                        <h4>Investment & Services Expansion</h4>
+                        <p>Financial services, healthcare, education, and digital infrastructure radiating from urban centers to underserved areas.</p>
+                    </div>
+                    <div class="mechanism-card">
+                        <h4>Knowledge & Technology Transfer</h4>
+                        <p>Diffusion of techniques, practices, and innovations from high-productivity to low-productivity settings through demonstration, training, and digital channels.</p>
+                    </div>
+                    <div class="mechanism-card">
+                        <h4>Institutional Spillovers</h4>
+                        <p>Extension of formal governance, property rights, contract enforcement, and regulatory frameworks from core to peripheral areas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottlenecks-section">
+                <h3>Institutional Bottlenecks</h3>
+                <p>Development diffusion is frequently blocked by institutional failures that prevent productivity gains from spreading:</p>
+                <div class="bottleneck-grid">
+                    <div class="bottleneck">
+                        <span class="bottleneck-icon">✕</span>
+                        <div>
+                            <h4>Extractive Governance</h4>
+                            <p>Elites capture rents from growth nodes without reinvesting in broader infrastructure or services.</p>
+                        </div>
+                    </div>
+                    <div class="bottleneck">
+                        <span class="bottleneck-icon">✕</span>
+                        <div>
+                            <h4>Land & Property Rights</h4>
+                            <p>Unclear tenure prevents investment in housing, agriculture, and businesses in peripheral areas.</p>
+                        </div>
+                    </div>
+                    <div class="bottleneck">
+                        <span class="bottleneck-icon">✕</span>
+                        <div>
+                            <h4>Infrastructure Gaps</h4>
+                            <p>Missing roads, electricity, and connectivity physically isolate populations from economic opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="bottleneck">
+                        <span class="bottleneck-icon">✕</span>
+                        <div>
+                            <h4>Conflict & Instability</h4>
+                            <p>Violence and political instability disrupt trade, destroy capital, and deter investment in affected regions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leapfrogging Section -->
+    <section id="leapfrogging" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2>Leapfrogging & The New Development Path</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-main">
+                    <p class="lead">Leapfrogging occurs when developing economies skip intermediate stages of development by adopting advanced technologies directly, bypassing the capital-intensive infrastructure that earlier developers built sequentially.</p>
+
+                    <h3>The Traditional Path</h3>
+                    <p>Historically, economic development followed a sequential pattern: physical infrastructure (roads, rails, power grids) → industrialization → digitization. This path was slow, capital-intensive, and required massive upfront investments that many developing countries could not finance.</p>
+
+                    <h3>The Leapfrogging Alternative</h3>
+                    <p>Digital and mobile technologies now offer an alternative trajectory. Developing economies can deploy mobile finance, digital platforms, cloud-based government services, and distributed renewable energy without first building the legacy infrastructure that developed nations accumulated over centuries.</p>
+
+                    <div class="leapfrog-comparison">
+                        <div class="path traditional">
+                            <h4>Traditional Linear Path</h4>
+                            <div class="path-steps">
+                                <div class="step">Physical Infrastructure</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">Industrialization</div>
+                                <div class="step-arrow">→</div>
+                                <div class="step">Digitization</div>
+                            </div>
+                            <p class="path-desc">Slower, sequential, capital-intensive</p>
+                        </div>
+                        <div class="path leapfrog">
+                            <h4>Leapfrogging Path</h4>
+                            <div class="path-steps">
+                                <div class="step">Mobile Finance</div>
+                                <div class="step">Digital Platforms</div>
+                                <div class="step">Cloud Services</div>
+                                <div class="step">Distributed Energy</div>
+                            </div>
+                            <p class="path-desc">Faster, direct, technology-enabled, bypasses legacy</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="content-sidebar">
+                    <div class="info-card highlight">
+                        <h4>Leapfrogging Examples</h4>
+                        <div class="example-item">
+                            <strong>M-Pesa (Kenya)</strong>
+                            <p>Mobile money reached millions who never had bank accounts, enabling financial inclusion without branch networks.</p>
+                        </div>
+                        <div class="example-item">
+                            <strong>Solar Home Systems</strong>
+                            <p>Off-grid solar provides electricity to rural households without grid extension, accelerating energy access.</p>
+                        </div>
+                        <div class="example-item">
+                            <strong>Aadhaar (India)</strong>
+                            <p>Digital identity enables direct benefit transfers, reducing leakage and expanding service delivery.</p>
+                        </div>
+                        <div class="example-item">
+                            <strong>Telemedicine</strong>
+                            <p>Remote diagnostics extend specialist healthcare to underserved areas without building hospitals.</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="leapfrog-outcomes">
+                <h3>Leapfrogging Outcomes</h3>
+                <div class="outcomes-grid">
+                    <div class="outcome-card">
+                        <div class="outcome-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M12 8v8M8 12h8"/>
+                            </svg>
+                        </div>
+                        <h4>Financial Inclusion</h4>
+                        <p>Access to savings, credit, insurance, and payments without traditional banking infrastructure.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </div>
+                        <h4>Productivity Gains</h4>
+                        <p>Digital tools enable small enterprises to access markets, information, and efficiencies previously available only to large firms.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </div>
+                        <h4>Service Delivery</h4>
+                        <p>Government services, healthcare, and education reach remote populations through digital channels.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h4>Market Access</h4>
+                        <p>E-commerce and digital platforms connect producers to buyers, reducing intermediation and expanding addressable markets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leapfrog-limits">
+                <h3>Limits of Leapfrogging</h3>
+                <p>Leapfrogging is powerful but not a panacea. Digital solutions complement but do not fully substitute for physical infrastructure:</p>
+                <ul class="limits-list">
+                    <li><strong>Last-mile logistics</strong> still require roads to deliver physical goods</li>
+                    <li><strong>Manufacturing</strong> remains dependent on reliable power, transport, and industrial infrastructure</li>
+                    <li><strong>Agricultural productivity</strong> requires irrigation, storage, and market connectivity</li>
+                    <li><strong>Digital access</strong> itself requires electricity, devices, and connectivity infrastructure</li>
+                    <li><strong>Human capital</strong> investments in health and education have no digital shortcut</li>
+                </ul>
+                <p class="limits-conclusion">Success is determined by speed, sequencing, and institutional readiness. Policy frameworks must adapt to leverage digital public infrastructure while continuing investments in foundational physical and human capital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poverty Reduction Section -->
+    <section id="poverty" class="section dark-section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">06</span>
+                <h2>Poverty Reduction</h2>
+            </div>
+            <p class="section-intro">Poverty reduction is the ultimate test of development. While global extreme poverty has declined dramatically since 1990, progress has been uneven, and billions remain economically vulnerable.</p>
+
+            <div class="poverty-framework">
+                <div class="poverty-drivers">
+                    <h3>Drivers of Poverty Reduction</h3>
+                    <div class="driver-cards">
+                        <div class="driver-card">
+                            <span class="driver-number">01</span>
+                            <h4>Economic Growth</h4>
+                            <p>Rising GDP per capita remains the primary driver of poverty reduction. Growth creates jobs, raises wages, and generates fiscal resources for public investment.</p>
+                        </div>
+                        <div class="driver-card">
+                            <span class="driver-number">02</span>
+                            <h4>Structural Transformation</h4>
+                            <p>Moving labor from subsistence agriculture to higher-productivity sectors raises incomes even without technological change within sectors.</p>
+                        </div>
+                        <div class="driver-card">
+                            <span class="driver-number">03</span>
+                            <h4>Human Capital Investment</h4>
+                            <p>Education and health improvements raise worker productivity and earnings potential across generations.</p>
+                        </div>
+                        <div class="driver-card">
+                            <span class="driver-number">04</span>
+                            <h4>Inclusive Institutions</h4>
+                            <p>Property rights, contract enforcement, and rule of law enable the poor to accumulate assets and participate in markets.</p>
+                        </div>
+                        <div class="driver-card">
+                            <span class="driver-number">05</span>
+                            <h4>Infrastructure Access</h4>
+                            <p>Roads, electricity, and connectivity integrate remote populations into the broader economy and enable participation in modern sectors.</p>
+                        </div>
+                        <div class="driver-card">
+                            <span class="driver-number">06</span>
+                            <h4>Social Protection</h4>
+                            <p>Safety nets prevent transitory shocks from becoming permanent poverty traps and enable risk-taking that leads to higher incomes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poverty-geography">
+                    <h3>Geography of Poverty</h3>
+                    <p>Global poverty is increasingly concentrated in specific geographies:</p>
+                    <div class="geography-grid">
+                        <div class="geography-card">
+                            <h4>Sub-Saharan Africa</h4>
+                            <p>Home to the majority of the world's extreme poor. High fertility, conflict, weak institutions, and limited structural transformation constrain progress.</p>
+                            <span class="geography-stat">~60% of global extreme poor</span>
+                        </div>
+                        <div class="geography-card">
+                            <h4>South Asia</h4>
+                            <p>Massive absolute numbers despite declining poverty rates. India alone accounts for hundreds of millions living below higher poverty thresholds.</p>
+                            <span class="geography-stat">~25% of global extreme poor</span>
+                        </div>
+                        <div class="geography-card">
+                            <h4>Fragile & Conflict States</h4>
+                            <p>By 2030, an estimated 85% of the extreme poor will live in fragile contexts where development is disrupted by violence and instability.</p>
+                            <span class="geography-stat">Rising concentration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="poverty-policy">
+                <h3>Policy Priorities for Poverty Reduction at Scale</h3>
+                <div class="policy-grid">
+                    <div class="policy-item">
+                        <span class="policy-icon">🌐</span>
+                        <div>
+                            <h4>Strengthen Diffusion Mechanisms</h4>
+                            <p>Invest in infrastructure, secondary cities, and rural connectivity to spread growth from core regions to peripheries.</p>
+                        </div>
+                    </div>
+                    <div class="policy-item">
+                        <span class="policy-icon">🏛️</span>
+                        <div>
+                            <h4>Build Inclusive Institutions</h4>
+                            <p>Extend property rights, formal employment, and financial services to populations currently excluded from the formal economy.</p>
+                        </div>
+                    </div>
+                    <div class="policy-item">
+                        <span class="policy-icon">📱</span>
+                        <div>
+                            <h4>Leverage Digital Public Infrastructure</h4>
+                            <p>Deploy digital identity, payments, and service delivery platforms to reach underserved populations efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="policy-item">
+                        <span class="policy-icon">🎓</span>
+                        <div>
+                            <h4>Invest in Human Capital</h4>
+                            <p>Prioritize education quality, health systems, and nutrition to build productive capacity across generations.</p>
+                        </div>
+                    </div>
+                    <div class="policy-item">
+                        <span class="policy-icon">⚡</span>
+                        <div>
+                            <h4>Accelerate Energy Access</h4>
+                            <p>Universal electricity access enables productive use, education, health, and connectivity.</p>
+                        </div>
+                    </div>
+                    <div class="policy-item">
+                        <span class="policy-icon">🤝</span>
+                        <div>
+                            <h4>Address Fragility & Conflict</h4>
+                            <p>Poverty reduction requires peace. Investments in governance, security, and conflict prevention are prerequisites in fragile states.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urban Growth Engines Section -->
+    <section id="urban-engines" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2>Urban Growth Engines</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-main">
+                    <p class="lead">Cities are not merely locations where development happens—they are engines that generate and transmit productivity gains across wider regions. Understanding how cities diffuse development is central to poverty reduction strategy.</p>
+
+                    <h3>The Core City as Growth Engine</h3>
+                    <p>Primary urban growth engines—major metropolitan areas—concentrate productivity through agglomeration economies: deep labor markets, specialized suppliers, knowledge spillovers, and infrastructure density. This concentration makes cities productive, but it also creates the potential for broader diffusion.</p>
+
+                    <h3>How Cities Diffuse Development</h3>
+                    <p>The value of urban growth engines lies not only in their internal productivity but in their capacity to transmit growth outward:</p>
+
+                    <div class="urban-flows">
+                        <div class="flow-item">
+                            <div class="flow-direction">
+                                <span class="flow-from">Core City</span>
+                                <span class="flow-arrow">→</span>
+                                <span class="flow-to">Secondary Cities</span>
+                            </div>
+                            <p>Investment, services, and economic activity expand from primary cities to regional centers, creating distributed growth poles.</p>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-direction">
+                                <span class="flow-from">Core City</span>
+                                <span class="flow-arrow">→</span>
+                                <span class="flow-to">Industrial Corridors</span>
+                            </div>
+                            <p>Manufacturing and logistics operations extend along transport corridors, creating employment and supplier opportunities.</p>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-direction">
+                                <span class="flow-from">Core City</span>
+                                <span class="flow-arrow">→</span>
+                                <span class="flow-to">Peri-Urban Zones</span>
+                            </div>
+                            <p>City expansion incorporates surrounding areas into urban labor markets, raising incomes for formerly rural populations.</p>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-direction">
+                                <span class="flow-from">Core City</span>
+                                <span class="flow-arrow">→</span>
+                                <span class="flow-to">Rural Hinterlands</span>
+                            </div>
+                            <p>Urban demand for food, remittances from migrants, and extension of infrastructure and services reach agricultural areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="content-sidebar">
+                    <div class="info-card">
+                        <h4>City-Region Spillovers</h4>
+                        <ul class="spillover-list">
+                            <li>
+                                <strong>Trade & Logistics</strong>
+                                <span>Movement of goods and inputs</span>
+                            </li>
+                            <li>
+                                <strong>Supply Chain Linkages</strong>
+                                <span>Demand transmitted to suppliers</span>
+                            </li>
+                            <li>
+                                <strong>Labor Mobility</strong>
+                                <span>Migration and commuting</span>
+                            </li>
+                            <li>
+                                <strong>Investment & Services</strong>
+                                <span>Financial and business services</span>
+                            </li>
+                            <li>
+                                <strong>Knowledge Transfer</strong>
+                                <span>Technology and skill diffusion</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-card accent">
+                        <h4>Top Urban Growth Engines</h4>
+                        <p class="card-intro">Cities with highest projected long-run poverty reduction potential:</p>
+                        <ol class="engine-list">
+                            <li>Delhi-NCR</li>
+                            <li>Mumbai-Pune</li>
+                            <li>Jakarta</li>
+                            <li>São Paulo</li>
+                            <li>Lagos</li>
+                            <li>Dhaka</li>
+                            <li>Cairo</li>
+                            <li>Mexico City</li>
+                            <li>Ho Chi Minh City</li>
+                            <li>Bangalore</li>
+                        </ol>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="urban-policy">
+                <h3>Policy Implications</h3>
+                <div class="policy-columns">
+                    <div class="policy-col">
+                        <h4>Invest in Connectivity</h4>
+                        <p>Transport corridors, digital infrastructure, and logistics networks that link cities to their hinterlands multiply the poverty reduction impact of urban growth.</p>
+                    </div>
+                    <div class="policy-col">
+                        <h4>Strengthen Secondary Cities</h4>
+                        <p>Developing intermediate cities creates additional growth poles, distributing opportunities more evenly and reducing pressure on primate cities.</p>
+                    </div>
+                    <div class="policy-col">
+                        <h4>Enable Urban Expansion</h4>
+                        <p>Land use policies, housing finance, and infrastructure investment should accommodate urban growth rather than restricting it.</p>
+                    </div>
+                    <div class="policy-col">
+                        <h4>Support Migrant Integration</h4>
+                        <p>Policies that enable rural-urban migrants to access housing, services, and formal employment maximize the gains from structural transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Africa Focus Section -->
+    <section class="section alt-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2>Africa's Development Trajectory</h2>
+            </div>
+            <p class="section-intro">Africa represents both the greatest challenge and greatest opportunity in global development. The continent's trajectory will largely determine whether the world achieves broad-based prosperity in the 21st century.</p>
+
+            <div class="africa-framework">
+                <div class="africa-context">
+                    <h3>The African Context</h3>
+                    <div class="context-grid">
+                        <div class="context-card">
+                            <h4>Demographic Trajectory</h4>
+                            <p>Africa's working-age population will double by 2050, adding more workers than the rest of the world combined. This creates both a demographic dividend opportunity and an employment imperative.</p>
+                        </div>
+                        <div class="context-card">
+                            <h4>Urbanization Pace</h4>
+                            <p>Africa is urbanizing faster than any continent in history. By 2050, 1.3 billion Africans will live in cities—more than triple today's urban population.</p>
+                        </div>
+                        <div class="context-card">
+                            <h4>Structural Transformation Gap</h4>
+                            <p>Unlike Asia, Africa has seen limited manufacturing growth. Services have absorbed some labor, but informality remains dominant.</p>
+                        </div>
+                        <div class="context-card">
+                            <h4>Infrastructure Deficit</h4>
+                            <p>Power, transport, and digital infrastructure gaps constrain productivity and limit the diffusion of development beyond capital cities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="africa-opportunities">
+                    <h3>Pathways Forward</h3>
+                    <div class="opportunity-grid">
+                        <div class="opportunity">
+                            <h4>Digital Leapfrogging</h4>
+                            <p>Mobile money, fintech, and digital platforms are already transforming African economies. Extending this to agriculture, healthcare, and government services offers rapid gains.</p>
+                        </div>
+                        <div class="opportunity">
+                            <h4>Regional Integration</h4>
+                            <p>The African Continental Free Trade Area (AfCFTA) creates a unified market of 1.3 billion people, potentially enabling scale economies and value chain development.</p>
+                        </div>
+                        <div class="opportunity">
+                            <h4>Energy Transition</h4>
+                            <p>Distributed solar and mini-grids can accelerate electrification without waiting for grid extension. Renewable energy industrialization offers a new development pathway.</p>
+                        </div>
+                        <div class="opportunity">
+                            <h4>Urban Development</h4>
+                            <p>Getting urbanization right—with adequate housing, infrastructure, and productive employment—is essential to realizing the demographic dividend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="section conclusion-section">
+        <div class="container">
+            <div class="conclusion-content">
+                <h2>The Path Forward</h2>
+                <p class="lead">Development economics in the 21st century must grapple with a central paradox: humanity has never been more productive, yet billions remain trapped in poverty. The challenge is no longer whether growth is possible, but whether it can be made to diffuse.</p>
+                
+                <p>The frameworks explored here—convergence, diffusion, leapfrogging, urban growth engines—all point toward a common insight: <strong>poverty reduction at scale requires not just generating productivity gains, but systematically spreading them</strong> through infrastructure, institutions, technology, and connectivity.</p>
+
+                <p>The stakes are generational. The policy choices made today in Africa, South Asia, and other emerging regions will determine living standards for billions across the 21st century and beyond. Getting development right is both an economic imperative and a moral one.</p>
+
+                <div class="cta-section">
+                    <p>For ongoing analysis of development economics, convergence, and global living standards:</p>
+                    <a href="https://hheuristics.substack.com" target="_blank" class="cta-button">
+                        Follow H Heuristics on Substack
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">H<span>Heuristics</span></span>
+                    <p>Insights for a changing world</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Topics</h4>
+                        <ul>
+                            <li><a href="#convergence">Economic Convergence</a></li>
+                            <li><a href="#diffusion">Development Diffusion</a></li>
+                            <li><a href="#leapfrogging">Leapfrogging</a></li>
+                            <li><a href="#poverty">Poverty Reduction</a></li>
+                            <li><a href="#urban-engines">Urban Growth Engines</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://hheuristics.substack.com" target="_blank">Substack</a></li>
+                            <li><a href="https://github.com/Hunterhghs" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hunter Hughes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
