@@ -493,6 +493,80 @@ blockquote p {
     color: var(--color-ink);
 }
 
+/* Blockquote Citation */
+blockquote cite {
+    display: block;
+    margin-top: var(--space-md);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--color-accent-dark);
+}
+
+/* Core Focus Areas Grid */
+.focus-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.focus-area-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: var(--space-xl);
+    transition: all var(--transition-base);
+}
+
+.focus-area-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.focus-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--color-accent-dark);
+    margin-bottom: var(--space-md);
+}
+
+.focus-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.focus-area-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+}
+
+.focus-area-card p {
+    font-size: 0.9375rem;
+    color: var(--color-slate);
+    margin-bottom: var(--space-md);
+}
+
+.focus-topics {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.focus-topics li {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-slate-light);
+    background: var(--color-paper-warm);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 3px;
+}
+
 /* Income Distribution */
 .income-distribution {
     margin: var(--space-2xl) 0;
@@ -1542,6 +1616,10 @@ blockquote p {
         gap: var(--space-lg);
     }
     
+    .focus-areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .implications-grid,
     .mechanism-grid,
     .driver-cards,
@@ -1598,6 +1676,7 @@ blockquote p {
         gap: var(--space-xs);
     }
     
+    .focus-areas-grid,
     .implications-grid,
     .mechanism-grid,
     .driver-cards,
