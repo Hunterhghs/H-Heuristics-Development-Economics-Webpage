@@ -493,6 +493,10 @@ blockquote p {
     color: var(--color-ink);
 }
 
+.info-card.accent .thinker-list li strong {
+    color: var(--color-accent-light);
+}
+
 /* Blockquote Citation */
 blockquote cite {
     display: block;
@@ -527,6 +531,7 @@ blockquote cite {
 .focus-icon {
     width: 48px;
     height: 48px;
+    min-width: 48px;
     color: var(--color-accent-dark);
     margin-bottom: var(--space-md);
 }
@@ -554,6 +559,7 @@ blockquote cite {
     gap: var(--space-xs);
     padding-top: var(--space-md);
     border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 0;
 }
 
 .focus-topics li {
@@ -565,6 +571,7 @@ blockquote cite {
     background: var(--color-paper-warm);
     padding: var(--space-xs) var(--space-sm);
     border-radius: 3px;
+    border: none;
 }
 
 /* Income Distribution */
@@ -1686,6 +1693,29 @@ blockquote cite {
     .context-grid,
     .opportunity-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .focus-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+    
+    .focus-area-card {
+        padding: var(--space-lg);
+    }
+    
+    .focus-area-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .focus-topics {
+        gap: var(--space-xs);
+    }
+    
+    .focus-topics li {
+        font-size: 0.6875rem;
+        padding: 4px 8px;
     }
     
     .outcomes-grid {
